@@ -1,0 +1,39 @@
+.table {
+    display: table;
+    border-collapse: collapse;
+    cursor: default;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+.header {
+    display: table-header-group;
+}
+
+.rowGroup {
+    display: table-row-group;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 10px;
+    border: solid 1px;
+}
+
+.selected-cell {
+    display: table-cell;
+    padding: 10px;
+    border: solid 5px;
+}
+
+.label {
+    padding: 5px;
+    border: 1px solid;
+}

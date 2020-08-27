@@ -1,0 +1,53 @@
+{
+    "users":
+    [   
+        {
+        "id": "5f33d752ceec69e4ab32deae",
+        "index": 0,
+        "name": "Joyce Olson",
+        "gender": "male",
+        "company": "SPHERIX",
+        "email": "joyceolson@spherix.com"
+        },
+        {
+        "id": "5f33d752d59fd263112e3d29",
+        "index": 1,
+        "name": "Blake Hines",
+        "gender": "male",
+        "company": "BEDDER",
+        "email": "blakehines@bedder.com"
+        },
+        {
+        "id": "5f33d75260d8f96cd7bc4bbb",
+        "index": 2,
+        "name": "Ladonna Solis",
+        "gender": "female",
+        "company": "AMRIL",
+        "email": "ladonnasolis@amril.com"
+        },
+        {
+        "id": "5f33d7525d8ad6008de0b356",
+        "index": 3,
+        "name": "Robin Trujillo",
+        "gender": "female",
+        "company": "ZILLA",
+        "email": "robintrujillo@zilla.com"
+        },
+        {
+        "id": "5f33d752e8385ddee371897b",
+        "index": 4,
+        "name": "Henson Patton",
+        "gender": "male",
+        "company": "BIOTICA",
+        "email": "hensonpatton@biotica.com"
+        },
+        {
+        "id": "5f33d752ef017390485cdecc",
+        "index": 5,
+        "name": "Pate Wright",
+        "gender": "male",
+        "company": "XEREX",
+        "email": "patewright@xerex.com"
+        }
+    ]
+}
