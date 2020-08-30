@@ -1,10 +1,18 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 function Cell(props) {
 
     const value = props.value
     const row = props.row
     const column = props.column
+    const editRow = props.editRow
+    const editColumn = props.editColumn
+
+    const isEditable = () => {
+            if  (editRow === row &&
+                editColumn === column)
+                return true
+    }
 
     const className = () => {
         if (props.selectedRow === row &&
@@ -33,33 +41,18 @@ function Cell(props) {
     const handleDoubleClick = () => {
         // clearTimeout(timer)
         // prevent = true
-        console.log('double click')
         props.onDoubleClick(row, column)
     }
 
-    const render = () => {
-        if (props.editRow === row && props.editColumn === column) {
-            return (
-                <input 
-                className={className()}
-                type="text" 
-                value={value} />
-            )
-        }
-        return (
-            <span className={className()}
+    return (
+        <span className={className()}
+            contentEditable={isEditable()}
+            suppressContentEditableWarning={true}
             onMouseDown={handleMouseDown}
             // onClick={handleClick}
             onDoubleClick={handleDoubleClick}>
                 {value}
-            </span>
-        )
-    }
-
-    return (
-        <Fragment>
-            {render()}
-        </Fragment>  
+        </span>
     )
 }
 
