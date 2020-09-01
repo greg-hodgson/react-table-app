@@ -86,13 +86,15 @@ function Table(props) {
         cells={Object.values(rowObject).map((value, index) => (
             <Cell 
             key={index + value}
-            column={index}
-            row={rowIndex} 
             value={value}
+            row={rowIndex}
+            column={index}
+            selected={selectedCell.selectedRow === rowIndex &&
+            selectedCell.selectedColumn === index ? true : false}
+            edit={editCell.editRow === rowIndex &&
+                 editCell.editColumn === index ? true : false}
             onMouseDown={onMouseDown}
-            onDoubleClick={onDoubleClick}
-            {...selectedCell}
-            {...editCell} />
+            onDoubleClick={onDoubleClick} />
         ))} />
     ))
 
